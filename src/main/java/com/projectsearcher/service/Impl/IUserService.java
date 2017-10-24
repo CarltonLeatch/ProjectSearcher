@@ -1,8 +1,8 @@
-package com.taskmanager.service.Impl;
+package com.projectsearcher.service.Impl;
 
-import com.taskmanager.dao.UserDao;
-import com.taskmanager.model.User;
-import com.taskmanager.service.UserService;
+import com.projectsearcher.dao.UserDao;
+import com.projectsearcher.model.User;
+import com.projectsearcher.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

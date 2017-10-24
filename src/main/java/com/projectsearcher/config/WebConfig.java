@@ -1,4 +1,4 @@
-package com.taskmanager.config;
+package com.projectsearcher.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableWebMvc
 @Configuration
-@ComponentScan("com.taskmanager")
+@ComponentScan("com.projectsearcher")
 public class WebConfig {
 
     public void addResourceHandlers(ResourceHandlerRegistry registry){

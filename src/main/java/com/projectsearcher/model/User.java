@@ -1,9 +1,9 @@
-package com.taskmanager.model;
+package com.projectsearcher.model;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "users", schema = "taskmanager")
+@Table(name = "users", schema = "projectsearcher")
 public class User {
     private int id;
     private String username;

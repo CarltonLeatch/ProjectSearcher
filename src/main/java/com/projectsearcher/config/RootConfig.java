@@ -1,4 +1,4 @@
-package com.taskmanager.config;
+package com.projectsearcher.config;
 
 import org.springframework.context.annotation.Configuration;
 

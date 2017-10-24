@@ -1,4 +1,4 @@
-package com.taskmanager.config;
+package com.projectsearcher.config;
 
 
 import org.hibernate.SessionFactory;
@@ -16,7 +16,7 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@ComponentScan({"com.taskmanager.config"})
+@ComponentScan({"com.projectsearcher.config"})
 public class HibernateConfig {
 
 
@@ -24,7 +24,7 @@ public class HibernateConfig {
     public LocalSessionFactoryBean sessionFactory(){
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
-        sessionFactory.setPackagesToScan(new String[] {"com.taskmanager.model"});
+        sessionFactory.setPackagesToScan(new String[] {"com.projectsearcher.model"});
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }
@@ -33,7 +33,7 @@ public class HibernateConfig {
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/taskmanager?useSSL=FALSE");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/projectsearcher?useSSL=FALSE");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;

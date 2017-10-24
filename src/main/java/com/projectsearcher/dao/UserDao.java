@@ -1,12 +1,15 @@
-package com.taskmanager.service;
+package com.projectsearcher.dao;
 
-import com.taskmanager.model.User;
+
+import com.projectsearcher.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserDao {
+
     public List<User> allUsers();
     public void saveOrUpdate(User user);
     public User getUserById(int id);
     public void delete(int id);
+
 }

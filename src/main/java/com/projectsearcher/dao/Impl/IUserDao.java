@@ -1,7 +1,7 @@
-package com.taskmanager.dao.Impl;
+package com.projectsearcher.dao.Impl;
 
-import com.taskmanager.dao.UserDao;
-import com.taskmanager.model.User;
+import com.projectsearcher.dao.UserDao;
+import com.projectsearcher.model.User;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
